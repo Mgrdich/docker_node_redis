@@ -1,2 +1,2 @@
-# Dockerize node js application with simple database structure
-node js application with simple database architechture
+# Dockerize node js redis
+Web application application with simple database structure
