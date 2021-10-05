@@ -11,6 +11,7 @@ const client = redis.createClient({
 client.set('visits', 0);
 
 app.get('/', function(req, res) {
+    // process.exit(1); you want to exit with some error
     client.get('visits',function(err, visits) {
         res.status(200).send('Number of visits' + visits);
         client.set('visits',parseInt(visits) + 1);
